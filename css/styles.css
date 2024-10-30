@@ -128,6 +128,9 @@ footer p {
     background-size: 200%;
     background-position: left;
     border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
     padding: .5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
