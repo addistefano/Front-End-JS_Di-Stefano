@@ -254,6 +254,7 @@ h2 {
 
     #contacto {
         flex-direction: column;
+        height: 100%;
     }
 
     #home iframe,
@@ -294,6 +295,7 @@ h2 {
 @media (min-width: 576px) and (max-width: 768px) {
     #contacto {
         flex-wrap: wrap;
+        height: auto;
     }
 
     #contacto {
