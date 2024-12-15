@@ -43,7 +43,7 @@ const agregarAlCarrito = (producto) => {
 
 // Función para obtener las reseñas desde resenias.json
 const peticionResenias = () => {
-    fetch('/Front-End-JS_Di-Stefano/../resenias.json')
+    fetch('/Front-End-JS_Di-Stefano/resenias.json')
         .then((respuesta) => respuesta.json())
         .then((datos) => {
             datos.forEach((item) => {
