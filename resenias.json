@@ -1,0 +1,52 @@
+[
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/men/1.jpg",
+        "nombre": "Juan Pérez",
+        "mensaje": "Excelente servicio y atención al cliente. Volveré a comprar sin dudas!"
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/women/2.jpg",
+        "nombre": "Maria López",
+        "mensaje": "La calidad de los productos es inigualable. ¡Muy recomendado!"
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/men/3.jpg",
+        "nombre": "Carlos García",
+        "mensaje": "Productos originales y a un precio justo. Muy conforme con mi compra."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/women/4.jpg",
+        "nombre": "Ana Fernández",
+        "mensaje": "La entrega fue rápida y el producto llegó en perfectas condiciones."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/men/5.jpg",
+        "nombre": "Jorge Torres",
+        "mensaje": "Atención personalizada y muy buen servicio técnico."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/women/6.jpg",
+        "nombre": "Lucía Martínez",
+        "mensaje": "Gran variedad de productos y el mejor precio que encontré."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/men/7.jpg",
+        "nombre": "Fernando Gómez",
+        "mensaje": "Me asesoraron muy bien para encontrar el celular ideal para mí."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/women/8.jpg",
+        "nombre": "Carolina Sánchez",
+        "mensaje": "Me encantó el trato y el seguimiento post-venta. ¡10 puntos!"
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/men/9.jpg",
+        "nombre": "Ricardo Díaz",
+        "mensaje": "El proceso de compra fue muy fácil y el celular llegó rápido. Muy satisfecho."
+    },
+    {
+        "imagen": "https://randomuser.me/api/portraits/thumb/women/10.jpg",
+        "nombre": "Verónica Muñoz",
+        "mensaje": "Excelente atención y productos de calidad. Definitivamente volveré a comprar aquí."
+    }
+]
