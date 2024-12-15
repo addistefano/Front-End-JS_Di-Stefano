@@ -110,7 +110,7 @@ document.addEventListener('click', (event) => {
             // Vacía el carrito en localStorage
             localStorage.setItem('carrito', JSON.stringify([]));
             // Volver a la página principal
-            window.location.href = '/';
+            window.location.href = '/Front-End-JS_Di-Stefano/';
         });
     }
 });
