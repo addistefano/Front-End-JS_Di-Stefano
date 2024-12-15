@@ -48,8 +48,23 @@ const crearNavegacion = () => {
         li.appendChild(a);
         ul.appendChild(li);
     }
+    if (!window.location.pathname.includes('carrito.html')) {
+        // Creo y añado el nuevo <li> para el carrito al final
+        const liCarrito = document.createElement('li');
+        // liCarrito.className = 'item-carrito';
+        liCarrito.innerHTML = `
+                            <a href="carrito.html" class="">                                
+                                    <div class="cart-li">
+                                        <i class="fa fa-cart-shopping" style="color: #c29336;"></i>
+                                        <p>0</p>
+                                        <p>$<span> 0</span></p>
+                                    </div>                                
+                            </a>
+                        `;
+        ul.appendChild(liCarrito); // Lo añado al final del <ul>
+    }
+};
 
-}
 
 const crearFooter = () => {
 
@@ -107,18 +122,34 @@ const crearFooter = () => {
 
 }
 
-
-/**
- * Funcion para crear toda la nevegacion comun de la App
- */
-const inicializarNavegation = () => {
-    crearNavegacion();
-    crearFooter();
+const obtenerCarrito = () => {
+    const carrito = localStorage.getItem('carrito');
+    return carrito ? JSON.parse(carrito) : [];
 };
 
-document.addEventListener('DOMContentLoaded', inicializarNavegation);
+const guardarCarrito = (carrito) => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
 
-/**
- * Autor: Alejandro Daniel Di Stefano
- * Año: 2024
- */
+const actualizarCarritoUI = () => {
+    const carrito = obtenerCarrito();
+
+    const cantidadProductosEl = document.querySelector('.cart-li p:nth-of-type(1)');
+    const precioTotalEl = document.querySelector('.cart-li p:nth-of-type(2) span');
+
+    const totalProductos = carrito.length;
+    const precioTotal = carrito.reduce((total, producto) => total + producto.price, 0);
+
+    cantidadProductosEl.textContent = totalProductos;
+    precioTotalEl.textContent = precioTotal.toFixed(2);
+};
+
+const inicializarNavegacion = () => {
+    crearNavegacion();
+    crearFooter();
+    actualizarCarritoUI();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    inicializarNavegacion();
+});
