@@ -27,6 +27,7 @@ Además de los scripts individuales por cada página, tanto `index.js` como `con
 Además, consta de:
 - **`index.html`**: La página principal que estructura el contenido general.
 - **`contacto.html`**: Página para el formulario de contacto.
+- **`carrito.html`**: Página para el manejo del Carrito de compras.
 
 ### Detalles del Proyecto
 
@@ -58,6 +59,12 @@ Archivo JavaScript que contiene:
 - **Fetch a API REST**: Obtiene datos desde un archivo JSON local (`resenias.json`) y también de la [API de MercadoLibre](https://api.mercadolibre.com/sites/MLA/search?q=Samsung), para mostrar productos Samsung en el catálogo.
 - **Manipulación del DOM**: Creación dinámica de elementos como las tarjetas de productos y reseñas.
 
+### 📂 `js/carrito.js`
+- **Manejo dinámico del Carrito**: Se agregaron funciones para mejorar la experiencia de compra del Usuario.
+
+### 📂 `js/contacto.js`
+- **Manejo dinámico del Formulario de Contacto**: Los datos de Contacto se gurdan dinámicamente en el `Session Storage`, y se envían a `formspree` usando el metodo `fetch()`.
+
 
 ## Tecnologías Utilizadas
 
@@ -79,17 +86,26 @@ El proyecto cumple con los siguientes requisitos:
 2. **Estilos CSS avanzados**:
    - Diseño responsivo con Flexbox y Grid.
    - Animaciones CSS para mejorar la experiencia del usuario.
+   - Uso de Libreria SweetAlert2 para mejorar experiencia.
 
 3. **JavaScript**:
    - Creación dinámica de elementos como navbar, reseñas y footer.
    - Manipulación del DOM e integración de datos JSON.
    - Consumo de una API REST mediante `fetch()`.
+   - Envio de Formulario por POST usando `fetch()`.
 
 4. **Accesibilidad y SEO**:
    - Atributos `alt` para imágenes y `aria-label` en enlaces.
 
 5. **Control de Versiones y Documentación**:
    - Proyecto subido a GitHub con un historial de commits que documentan el progreso.
+
+6. **Integración de un carrito de compras** para que los usuarios puedan gestionar sus pedidos.
+
+7. **Implementación de un sistema de pago en línea**.
+
+8. **Base de datos de usuarios y pedidos** para mejorar la personalización y seguimiento de compras.
+
 
 ## Configuración del Proyecto
 
@@ -100,18 +116,12 @@ El proyecto cumple con los siguientes requisitos:
 
 2. Abrir `index.html` en tu navegador para visualizar el sitio.
 
-## Próximos Pasos
 
-- **Integración de un carrito de compras** para que los usuarios puedan gestionar sus pedidos.
-- **Implementación de un sistema de pago en línea**.
-- **Base de datos de usuarios y pedidos** para mejorar la personalización y seguimiento de compras.
-
----
 
 ## Créditos
 
 - Proyecto desarrollado por Alejandro Di Stefano.
-- Fotografías de productos e íconos de Font Awesome y Google Fonts.
+- Fuentes e íconos de Font Awesome y Google Fonts.
 - Video de YouTube para mejorar la experiencia de usuario.
 
 ---
