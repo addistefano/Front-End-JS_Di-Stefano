@@ -12,22 +12,22 @@ const crearNavegacion = () => {
 
     const navigation = [
         {
-            link: '/',
+            link: '/Front-End-JS_Di-Stefano/',
             hash: 'home',
             text: 'Inicio',
         },
         {
-            link: '/',
+            link: '/Front-End-JS_Di-Stefano/',
             hash: 'productos',
             text: 'Productos',
         },
         {
-            link: '/',
+            link: '/Front-End-JS_Di-Stefano/',
             hash: 'resenias',
             text: 'Reseñas',
         },
         {
-            link: 'contacto.html',
+            link: '/Front-End-JS_Di-Stefano/contacto.html',
             hash: '',
             text: 'Contacto',
         },
